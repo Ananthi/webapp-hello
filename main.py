@@ -5,7 +5,7 @@ app = FastAPI()
 
 
 @app.get("/")
-async def root(responseType=HTMLResponse):
+async def root(response_class=HTMLResponse):
   return """
     <html>
         <head>
